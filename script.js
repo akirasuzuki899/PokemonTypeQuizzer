@@ -122,7 +122,7 @@ function generateExplanation() {
   }
 
   // 解説テキストの生成
-  let explanation = `攻撃タイプ「${attackType}」のタイプ相性：<br>`;
+  let explanation = `「${attackType}」のタイプ相性：<br>`;
 
   if (superEffective.length > 0) {
       explanation += `2倍: ${superEffective.join(', ')}<br>`;
