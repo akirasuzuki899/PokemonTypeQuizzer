@@ -23,25 +23,25 @@ button {
 }
 
 .question {
-    font-size: 1.5em;
+    font-size: 2.25em;
     margin: 20px 0;
 }
 
 .options button {
     padding: 10px 20px;
     margin: 5px;
-    font-size: 1em;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
 .result {
-    font-size: 1.5em;
+    font-size: 2.25em;
     font-weight: bold;
     margin: 20px 0;
 }
 
 .explanation {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 10px 0;
     color: #333; /* 適宜調整 */
 }
@@ -75,7 +75,7 @@ button {
 
 /* 正誤の結果のスタイル調整 */
 #result {
-    font-size: 2em; /* フォントサイズを大きくする */
+    font-size: 3.0em; /* フォントサイズを大きくする */
     margin: 20px 0;
     font-weight: bold;
 }
@@ -89,7 +89,7 @@ button {
     width: 100%; /* ボタンの幅を設定 */
     padding: 10px 20px; /* パディングを設定 */
     margin: 5px; /* マージンを設定 */
-    font-size: 1em; /* フォントサイズを設定 */
+    font-size: 1.5em; /* フォントサイズを設定 */
     cursor: pointer; /* カーソルスタイルを設定 */
 }
 
