@@ -1,8 +1,25 @@
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
-    margin: auto;
-    text-align: center;
+    text-align: center; /* 中央に配置 */
+    margin: 0 auto;
+}
+
+/* iOS Safariでのボタンスタイル調整 */
+button {
+    min-height: 50px; /* ボタンの厚みを増やす */
+}
+
+#nextQuestionButton {
+    width: 100%; /* ボタンの横幅を画面いっぱいに広げる */
+    box-sizing: border-box; /* paddingやborderを幅に含める */
 }
 
 .question {
@@ -37,11 +54,6 @@
     color: red;
 }
 
-#nextQuestionButton {
-    display: block; /* ブロック要素として表示 */
-    margin: 20px auto; /* 上下にマージン、左右は自動（中央配置） */
-}
-
 .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2列のグリッド */
@@ -57,6 +69,33 @@
 @media (max-width: 600px) {
     .options button {
         width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* 正誤の結果のスタイル調整 */
+#result {
+    font-size: 2em; /* フォントサイズを大きくする */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* その他のスタイルのリファクタリング */
+/* ここで、不要なスタイル定義を削除し、効率的なスタイルに整理する */
+
+/* 例: ボタンスタイルの整理 */
+button {
+    min-height: 50px; /* ボタンの厚みを増やす */
+    width: 100%; /* ボタンの幅を設定 */
+    padding: 10px 20px; /* パディングを設定 */
+    margin: 5px; /* マージンを設定 */
+    font-size: 1em; /* フォントサイズを設定 */
+    cursor: pointer; /* カーソルスタイルを設定 */
+}
+
+/* レスポンシブデザインの整理 */
+@media (max-width: 600px) {
+    .options button {
         margin: 10px 0;
     }
 }
