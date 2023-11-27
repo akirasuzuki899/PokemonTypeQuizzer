@@ -1,0 +1,62 @@
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.question {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.options button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.explanation {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #333; /* 適宜調整 */
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#nextQuestionButton {
+    display: block; /* ブロック要素として表示 */
+    margin: 20px auto; /* 上下にマージン、左右は自動（中央配置） */
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列のグリッド */
+    gap: 10px; /* グリッドアイテム間の隙間 */
+}
+
+.options button {
+    width: 100%; /* ボタンの幅をグリッドセルに合わせる */
+}
+
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    .options button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
